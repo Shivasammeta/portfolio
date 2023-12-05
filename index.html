@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHIVA-PORTFOLIO</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(4, 4, 57);
+            color: white;
+        }
+
+        main hr {
+            border: 0;
+            height: 1.2px;
+            margin: 50px 100px;
+            background-color: aqua;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 75px;
+            background-color: rgb(8, 47, 81);
+
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0px 23px;
+        }
+
+        nav li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 150px 0px;
+        }
+
+        .firstsection>div {
+            width: 30%;
+
+        }
+
+        .leftsection {
+            /* background-color: red; */
+            font-size: 3rem;
+            margin: 50px 0px;
+
+        }
+
+        .rightsection img {
+            width: 80%;
+            /* background-color: red; */
+        }
+
+        .secondsection {
+            margin: auto;
+            max-width: 80vw;
+            height: 75vh;
+        }
+
+        .secondsection h1 {
+            font-size: 3em;
+            /* text-align: center; */
+        }
+
+        .secondsection .box {
+            background-color: white;
+            height: 2px;
+            width: 50vw;
+            margin: 100px 0px;
+            display: flex;
+        }
+
+        .secondsection .vertical {
+            height: 93px;
+            width: 2px;
+            background-color: white;
+            margin: 0 100px;
+        }
+
+        /* utility class */
+        .yellow {
+            color: rgb(96, 96, 199);
+        }
+
+        #element {
+            color: rgb(96, 96, 199);
+        }
+
+        
+        .image-top {
+            width: 70px;
+            position: relative;
+            top: -75px;
+            left: -28px;
+        }
+
+        .vertical-title {
+            font-size: 1.5rem;
+            position: relative;
+            top: 22px;
+            width: 150px;
+            right: 10px;
+        }
+
+        .vertical-dec {
+            position: relative;
+            top: 25px;
+            width: 150px;
+            color: gray;
+            right: 10px;
+            font-size: 10px;
+        }
+
+
+        .thirdsection {
+            margin: auto;
+            max-width: 80vw;
+            height: 75vh;
+        }
+
+        .thirdsection h1 {
+            font-size: 3em;
+            /* text-align: center; */
+        }
+
+        #services {
+            display: flex;
+            margin: 30px;
+
+        }
+
+        #services .box {
+            padding: 34px;
+            margin: 2px 30px;
+        }
+        #services .box p{
+            position: relative;
+            top: 20px;
+        }
+        #services .box img{
+            width: 50px;
+        }
+        
+
+            /* contact details */
+            #contact-box {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-bottom: 34px;
+            }
+
+            #contact-box input,
+            #contact-box textarea {
+                width: 100%;
+                padding: 0.5rem;
+                border-radius: 10px;
+                font-size: 1rem;
+            }
+
+            #contact-box form {
+                width: 40%;
+            }
+
+            #contact-box label {
+                font-size: 1rem;
+
+            }
+
+            #contact-box ::placeholder {
+                text-align: center;
+            }
+
+            #contact {
+                position: relative;
+            }
+
+            #contact::before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                opacity: 0.7;
+                background: rgb(34, 34, 68);
+
+            }
+
+            .contact-h1 {
+                text-align: center;
+                font-size: 3rem;
+            }
+            footer{
+                height: 20vh;
+
+            }
+            .footer{
+                display: flex;
+                padding: 35px 122px;
+                justify-content: space-evenly;
+            }
+            .footerfirst{
+                font-size: 1.5rem;
+            }
+            .footer > div{
+                width: 223px;
+            }
+            .footersecond img{
+                width: 20px;
+                position: relative;
+                margin: 20px 20px;
+                cursor: pointer;
+            }
+            .footer-text{
+                text-align: center;
+                padding: 20px 0;
+                background-color: black;
+            }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+            SHIVA-PORTFOLIO
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">certification</a></li>
+                    <li><a href="/">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is <span class="yellow">SHIVA</span>
+                <div>and I am a passionate</div>
+                <!-- <div>Web developer</div> -->
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="bg.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <h1>WHAT I DO</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="i2.png" alt="">
+                    <div class="vertical-title">photography</div>
+                    <div class="vertical-dec"> I Love to capture beautiful moments. life deep v austin schlitz drinking
+                        vinegar, messen ger bag slow-carb. Migas tumblr kombucha you probably hav en't heard of them +1
+                        chicharrones. Tilde wayfarers craft beer stumptown, humblebrag ugh whatever.</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="i3.png" alt="">
+                    <div class="vertical-title">Developing websites</div>
+                    <div class="vertical-dec">As a passionate full-stack developer, I take pride in crafting dynamic and
+                        engaging web applications that seamlessly integrate
+                        front-end and back-end technologies. With a holistic understanding of the entire development
+                        process, I'm able to create end-to-end
+                        solutions that deliver exceptional user experiences and robust functionality.</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="i4.png" alt="">
+                    <div class="vertical-title">Music Enthusiast</div>
+                    <div class="vertical-dec"> In the midst of debugging, brainstorming new project ideas, or crafting
+                        elegant solutions, music has been my steadfast companion.
+                        The melodies and lyrics have a unique ability to transport me to a different mindset, allowing
+                        me to approach challenges from fresh perspectives.</div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="thirdsection">
+            <h1 class="h-primary center">ABOUT ME</h1>
+            <div id="services">
+                <div class="box">
+                    <img src="x1.webp" alt="">
+                    <h2 class="h-secondary center">Ambition</h2>
+                    <p class="center"> I am a passionate and ambitious individual who embarked on the path of becoming a
+                        full-stack developer with a determination to grow and evolve in the ever-evolving tech
+                        landscape. As a trainee, I've immersed myself in both front-end and back-end technologies,
+                        gaining practical experience and hands-on skills that will shape my career in web development
+                    </p>
+                </div>
+                <div class="box">
+                    <img src="x2.png" alt="">
+                    <h2 class="h-secondary center">Learning as a Way of Life</h2>
+                    <p class="center"> My journey as a full-stack developer trainee is a testament to my unyielding
+                        thirst for knowledge. I find joy in embracing new challenges, diving into unfamiliar
+                        technologies, and understanding how the pieces of the development puzzle fit together. Learning
+                        isn't just a phase for me; it's a continuous process that fuels my growth and creativity.</p>
+                </div>
+                <div class="box">
+                    <img src="x3.png" alt="">
+                    <h2 class="h-secondary center">75% Empowering User Experiences</h2>
+                    <p class="center">The heart of my passion lies in creating user-centric experiences that empower and
+                        engage. Whether it's a seamless e-commerce platform, a user-friendly task management app, or an
+                        immersive blog platform, I believe that technology should enhance and simplify people's lives.
+                        This philosophy drives every project I undertake.</p>
+                </div>
+            </div>
+
+    </main>
+
+    <section id="contact">
+        <h1 class="contact-h1">Contact </h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="name" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="10" rows="5"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footerfirst">Shiva's Developer Portfolio </div>
+        <div class="footersecond">
+            <h1>CONTACT INFO</h1>
+            <img src="f1.png" alt="">
+            <img src="f2.png" alt="">
+        </div>
+        <div class="footerthird">
+            <h1>LOCATION</h1>
+            <h2>BHAINSA 504103</h2>
+            <h4>TELANGANA,INDIA</h4>
+            
+        </div>
+
+    </footer>
+    <div class="footer-text">
+        www.shivasportfolio.com | All rights reserved
+    </div>
+    
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web developer'],
+            typeSpeed: 70,
+        });
+    </script>
+
+</body>
+
+</html>
